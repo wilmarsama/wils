@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Google Sans Regular";
+	box-sizing: border-box;
+
+}
+body{
+	background: #fefefe;
+	background-image: url(1/background.jpg);
+	background-size:  1000px;
+	  
+   background-position: center;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background: #3DDFB4;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+.logo{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fefefe;
+
+}
+.Responsive{
+	display: none;
+}
+.nav-bar ul{
+	display: flex;
+
+}
+/*---------------- PLACE -------------*/
+.products{
+	margin: 50px 0;
+	margin-left: 90px;
+}
+.column3{
+	flex: 20%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	transition: transform 0.5s;
+}
+.column3 img{
+	width: 90%;
+}
+.column3:hover{
+	transform: translateY(-5px);
+}
+.small-container1{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.nav-bar ul li a{
+	display: block;
+	color: #fefefe;
+	font-size: 20px;
+	padding: 10px 25px;
+	border-radius: 50px;
+	transition: 0.5s;
+	margin: 0 5px;
+
+}
+.nav-bar ul li a:hover {
+	color: #11101b;
+	background: #fefefe;
+}
+.nav-bar ul li a.active{
+	color: #11101b;
+	background: #fefefe;
+
+}
+@media only screen and (max-width: 1320px) {
+	header {
+		padding: 0 50px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	header {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.Responsive{
+		display: block;
+		cursor: pointer;
+
+	}
+	.Responsive .line{
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+	}
+	.nav-bar{
+		height: 0px;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+	}
+	.nav-bar.active{
+		height: 450px;
+	}
+	.nav-bar ul{
+		display: block;
+		width: fit-content;
+		margin: 80px auto 0 auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
+	}
+	.nav-bar.active ul {
+		opacity: 1;
+	}
+	.nav-bar ul li a{
+		margin-bottom: 12px;
+	}
+
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.column2{
+	flex-basis: 50%;
+	min-width: 300px;
+	text-align: white;
+}
+.column2 img{
+	max-width: 100%;
+	padding: 50px 0;
+	width: 1000px;
+	height:780px;
+}
+h1 {
+	color: white;
+}
+h3 {
+	color: black;
+	font-size: 40px;
+}
